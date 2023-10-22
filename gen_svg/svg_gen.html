@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="background-color:#000000">
+<!-- body has a default margin of 8 -->
+<!-- style="margin:0" -->
+<body style="margin:0">
+
+<script>
+
+    // let def_margin = 0;
+    let width = screen.availWidth;
+    let height = screen.availHeight;
+
+
+    function svg_gen(x, y, h, w, col) {
+        var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute('width', w);
+        svg.setAttribute('height', h);
+        var svgNS = svg.namespaceURI;
+        var rect = document.createElementNS(svgNS, 'rect');
+        rect.setAttribute('x', x);
+        rect.setAttribute('y', 0);
+        rect.setAttribute('width', w);
+        rect.setAttribute('height', h);
+        rect.setAttribute('fill', col);
+        svg.appendChild(rect);
+        // var txt = document.createElementNS(svgNS, 'text')
+        // txt.innerHTML = "Hello";
+        // txt.setAttribute('x', x);
+        // txt.setAttribute('y', y);
+        // txt.setAttribute('width', w);
+        // txt.setAttribute('height', h);
+        // svg.appendChild(txt);
+        document.body.appendChild(svg);
+    }
+
+    svg_gen(0, 0, 100, width, "#773377");
+    svg_gen(0, 100, 100, width, "#337733");
+    svg_gen(0, 200, 100, width/2, "#337777");
+    svg_gen(0, 200, 100, width/2, "#777733");
+
+    
+</script>
+
+<style>
+    svg text{
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html style="background-color:#000000">
+<body>
+
+<script>
+    var total = document.createElement("div");
+    total.setAttribute("class", "total");
+
+    var main = document.createElement("div");
+    main.setAttribute("class", "block");
+
+    var row = document.createElement("div");
+    row.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#084e9c";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Assign z";
+    elem.appendChild(txt);
+    row.appendChild(elem);
+    main.appendChild(row);
+
+    var row = document.createElement("div");
+    row.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#023047";
+    elem.style.transform = "skew(-20deg)";
+    elem.style.borderRadius = "15pt ";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Call func()";
+    txt.style.transform = "skew(15deg)";
+    elem.appendChild(txt);
+    row.appendChild(elem);
+    main.appendChild(row);
+
+
+
+    var row = document.createElement("div");
+    row.setAttribute("class", "row");
+    var block = document.createElement("div");
+    block.setAttribute("class", "block");
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#fb8500";
+    elem.style.borderRadius = "10pt";
+    var txt = document.createElement("p");
+    txt.innerHTML = "X > 7";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    block.appendChild(row1);
+
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#023047";
+    elem.style.transform = "skew(-20deg)";
+    elem.style.borderRadius = "15pt ";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Call func()";
+    txt.style.transform = "skew(15deg)";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    block.appendChild(row1);
+
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#084e9c";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Assign i";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    block.appendChild(row1);
+    row.appendChild(block);
+
+    var block = document.createElement("div");
+    block.setAttribute("class", "sm_block");
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    row1.appendChild(elem);
+    block.appendChild(row1);
+    row.appendChild(block);
+
+    var block = document.createElement("div");
+    block.setAttribute("class", "block");
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#fb8500";
+    elem.style.borderRadius = "10pt";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Else";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    block.appendChild(row1);
+
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#023047";
+    elem.style.transform = "skew(-20deg)";
+    elem.style.borderRadius = "15pt ";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Call func()";
+    txt.style.transform = "skew(15deg)";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    block.appendChild(row1);
+
+    
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var block1 = document.createElement("div");
+    block1.setAttribute("class", "block");
+    var row2 = document.createElement("div");
+    row2.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#fb8500";
+    elem.style.borderRadius = "10pt";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Y == 3";
+    elem.appendChild(txt);
+    row2.appendChild(elem);
+    block1.appendChild(row2);
+
+    var row2 = document.createElement("div");
+    row2.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#084e9c";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Assign a";
+    elem.appendChild(txt);
+    row2.appendChild(elem);
+    block1.appendChild(row2);
+
+    row1.appendChild(block1);
+
+
+
+    var block1 = document.createElement("div");
+    block1.setAttribute("class", "sm_block");
+    var row2 = document.createElement("div");
+    row2.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    row2.appendChild(elem);
+    block1.appendChild(row2);
+    row1.appendChild(block1);
+
+    var block1 = document.createElement("div");
+    block1.setAttribute("class", "block");
+    var row2 = document.createElement("div");
+    row2.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#fb8500";
+    elem.style.borderRadius = "10pt";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Else";
+    elem.appendChild(txt);
+    row2.appendChild(elem);
+    block1.appendChild(row2);
+    row1.appendChild(block1);
+
+    block.appendChild(row1);
+
+    row.appendChild(block);
+    main.appendChild(row);
+
+    var row = document.createElement("div");
+    row.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#084e9c";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Assign x";
+    elem.appendChild(txt);
+    row.appendChild(elem);
+    main.appendChild(row);
+
+    var row = document.createElement("div");
+    row.setAttribute("class", "row");
+
+    var fore = document.createElement("div");
+    fore.setAttribute("class", "fore");
+    fore.style.backgroundColor = "#8ecae6";
+
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    var txt = document.createElement("p");
+    txt.innerHTML = "For 5";
+    txt.style.color = "#222222";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    fore.appendChild(row1)
+
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#084e9c";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Assign X";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    fore.appendChild(row1)
+
+    var row1 = document.createElement("div");
+    row1.setAttribute("class", "row");
+    var elem = document.createElement("div");
+    elem.setAttribute("class", "elem");
+    elem.style.backgroundColor = "#023047";
+    elem.style.transform = "skew(-20deg)";
+    elem.style.borderRadius = "15pt ";
+    var txt = document.createElement("p");
+    txt.innerHTML = "Call func()";
+    txt.style.transform = "skew(15deg)";
+    elem.appendChild(txt);
+    row1.appendChild(elem);
+    fore.appendChild(row1)
+
+    row.appendChild(fore);
+    main.appendChild(row);
+
+
+    total.appendChild(main);
+    document.body.appendChild(total);
+</script>
+
+<style>
+    .total {
+        display: flex;
+        flex-direction:column;
+        width: 1800px;
+        align-items: center;
+        padding: 10pt;
+    }
+    .block {
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        align-items: center;
+    }
+    .fore {
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        align-items: center;
+        border: #fffff0 solid;
+        border-radius: 10pt;
+        margin: 2pt;
+        padding: 10pt;
+    }
+    .sm_block {
+        display: flex;
+        flex-direction:column;
+        width: 33%;
+        align-items: center;
+    }
+    .row {
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+
+        justify-content: center;
+    }
+    .elem {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 30pt;
+        margin: 2pt;
+    }
+    p {
+        color: #FFFFF0;
+        font-size: 24pt;
+        font-family: Arial, sans-serif;
+    }
+</style>
+
+</body>
+</html>
